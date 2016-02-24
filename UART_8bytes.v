@@ -1,21 +1,26 @@
 /*
 	Ivan I. Ovchinnikov
 	last upd.: 2016.02.24
+	
+	8 bytes * 8 bits, startbit 0, stopbit 1, 
+	no parity, MSB sequence, multiplexed input, 
+	8to1 mux control
 */
 
 module UART_8bytes
 (
-	input reset,
-	input clk,
-	input RQ,
-	input [7:0] data,
-	output reg tx,
-	output reg dirTX,
-	output reg dirRX,
-	output reg [2:0] switch,
+	input reset,					// global reset and enable signal
+	input clk,						// actual needed baudrate (tested on 4,8 MHz)
+	input RQ,						// start transfer signal
+	input [7:0] data,				// 8bytes * 8bits data
+	output reg tx,					// serial transmitted data
+	output reg dirTX,				// rs485 TX dir controller 
+	output reg dirRX,				// rs485 RX dir controller
+	output reg [2:0] switch,		// multiplexor switcher
 	output reg test
 );
-`define WAIT 0
+
+`define WAIT 0						// state machine definitions
 `define MEGAWAIT 1
 `define DIRON 2
 `define TX 3
@@ -26,55 +31,55 @@ reg [3:0] serialize;
 reg [4:0] delay;
 reg [1:0] rqsync;
 
-always@(posedge clk) begin
-	rqsync <= { rqsync[0],  RQ };
+always@(posedge clk) begin			// double d-flipflop to avoid metastability
+	rqsync <= { rqsync[0],  RQ };	// start signal from other clock domain
 end
 
 always@(posedge clk)
 begin
-if (~reset) begin
+if (~reset) begin					// global asyncronous reset, initial values
 	state <= 1'b0;
 	serialize <= 1'b0;
 	delay <= 1'b0;
 	tx <= 1'b1;
-end else begin
-	case (state)
-		`WAIT: begin
-			if (rqsync[1]) state <= `DIRON;
+end else begin						// main circuit
+	case (state)					// state machine
+		`WAIT: begin				// waiting for transfer request
+			if (rqsync[1]) state <= `DIRON;		// just move on
 			test <= 0;
 		end
-		`DIRON: begin 
-			delay <= delay + 1'b1;
+		`DIRON: begin 				// set the DIR pins to high level with a tiny delay
+			delay <= delay + 1'b1;	// count while in this state
 			if (delay == 0) begin dirRX <= 1; end;
 			if (delay == 15) begin dirTX <= 1; end
-			if (delay == 30) begin state <= `TX; end
+			if (delay == 30) begin state <= `TX; end	// proceed to next state
 		end
-		`TX: begin
-			serialize <= serialize + 1'b1;
-			case (serialize)
+		`TX: begin					// the transfer
+			serialize <= serialize + 1'b1;		// count while in this state
+			case (serialize)					// make a sequence while here
 				0: begin 
-					tx <= 0;  
-					delay <= 0;
+					tx <= 0;  		// startbit
+					delay <= 0;		// reset previous counter
 				end
-				1,2,3,4,5,6,7,8: tx <= data[(serialize - 1)];
+				1,2,3,4,5,6,7,8: tx <= data[(serialize - 1)];	// transmit every bit of data
 				9: begin 
-					tx <= 1;
-					switch <= switch + 1'b1;
+					tx <= 1;		// stopbit
+					switch <= switch + 1'b1;	// switch multiplexor
 				end
 				10: begin
-					serialize <= 0; 
-					if (switch == 0) state <= `DIROFF; 
+					serialize <= 0; // reset sequencer
+					if (switch == 0) state <= `DIROFF;	// if completed transfer proceed to next state 
 				end	
 			endcase
 		end
-		`DIROFF: begin
-			delay <= delay + 1'b1;
+		`DIROFF: begin				// set the DIR pins to low level with a tiny delay
+			delay <= delay + 1'b1;	// count while in this state
 			if (delay == 15) begin dirTX <= 0; end
-			if (delay == 30) begin dirRX <= 0; state <= `MEGAWAIT; end
+			if (delay == 30) begin dirRX <= 0; state <= `MEGAWAIT; end	// proceed to next state
 		end
-		`MEGAWAIT: begin
-			delay <= 0;
-			if (~rqsync[1]) state <= `WAIT;
+		`MEGAWAIT: begin			// checking the low level of request signal
+			delay <= 0;				// reset previous counter
+			if (~rqsync[1]) state <= `WAIT; // just move on
 		end
 	endcase 
 end

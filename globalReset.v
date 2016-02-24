@@ -12,7 +12,7 @@ reg [5:0] count;
 
 always@(posedge clk40)
 begin
-	if (count > 6'b111110) rst <= 1;
-	else begin rst <= 0; count <= count + 1'b1; end
+	if (count > 6'b111110) rst <= 1;		// on fpga start count 62 clocks and set global enable
+	else begin rst <= 0; count <= count + 1'b1; end		// while count set enabe to low level
 end
 endmodule
