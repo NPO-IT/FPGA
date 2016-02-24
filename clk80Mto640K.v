@@ -1,3 +1,8 @@
+/*
+	Ivan I. Ovchinnikov
+	last upd.: 2016.02.20
+*/
+
 module clk80Mto640K(
     input wire clkIN,
     output reg clkOUT = 1'b0

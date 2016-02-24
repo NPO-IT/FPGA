@@ -1,3 +1,8 @@
+/*
+	Ivan I. Ovchinnikov
+	last upd.: 2016.02.20
+*/
+
 module div21
 (
     input wire clkIN,

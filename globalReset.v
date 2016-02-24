@@ -1,7 +1,12 @@
-module globalReset
+/*
+	Ivan I. Ovchinnikov
+	last upd.: 2016.02.20
+*/
+
+module globalReset			// to use this: set the initial for (~reset) and main circuit for (reset)
 (
-	input clk40,
-	output reg rst
+	input clk40,			// 40 MHz
+	output reg rst			// global enable
 );
 reg [5:0] count;
 

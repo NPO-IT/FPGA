@@ -1,3 +1,8 @@
+/*
+	Ivan I. Ovchinnikov
+	last upd.: 2016.02.10
+*/
+
 module divReg
 (
 	input iClkIN,

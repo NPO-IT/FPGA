@@ -1,3 +1,8 @@
+/*
+	Ivan I. Ovchinnikov
+	last upd.: 2016.02.24
+*/
+
 module UART_8bytes
 (
 	input reset,
@@ -38,7 +43,7 @@ end else begin
 			if (rqsync[1]) state <= `DIRON;
 			test <= 0;
 		end
-		`DIRON: begin //для отладки - это состояние просто отправлет в следующее
+		`DIRON: begin 
 			delay <= delay + 1'b1;
 			if (delay == 0) begin dirRX <= 1; end;
 			if (delay == 15) begin dirTX <= 1; end
@@ -62,10 +67,10 @@ end else begin
 				end	
 			endcase
 		end
-		`DIROFF: begin //для отладки - это состояние просто отправлет в следующее
+		`DIROFF: begin
 			delay <= delay + 1'b1;
 			if (delay == 15) begin dirTX <= 0; end
-			if (delay == 30) begin dirTX <= 0; state <= `MEGAWAIT; end
+			if (delay == 30) begin dirRX <= 0; state <= `MEGAWAIT; end
 		end
 		`MEGAWAIT: begin
 			delay <= 0;

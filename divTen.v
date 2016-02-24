@@ -1,4 +1,9 @@
-module divTen
+/*
+	Ivan I. Ovchinnikov
+	last upd.: 2016.02.18
+*/
+
+module divTen // divides clock by 10
 (
     input wire clkIN,
     output reg clkOUT = 1'b0
