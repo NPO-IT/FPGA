@@ -1,0 +1,11 @@
+Timing Analyser Checked:
+ Verilog modules:
+  - clk80Mto640K	- is actually a divider by 125
+  - div21		- is a divider by 21
+  - divReg		- is a divider by 2, 4, 8 and 16
+  - divTen		- is a divider by 10
+  - globalReset		- is a module that makes a global enable signal on scheme start (0 is reset, 1 is work)
+  - UARTRXn		- is a 5Mbps 8 bit UART receiver, 80MHz clk, high level valid signal when idle
+  - UART_TX_8bytes	- is a 5Mbps 8 bit UART transmitter, no parity, 80MHz clk, multiplexed 8 bytes data in
+ VHDL modules:
+  - UART_RX		- is a 5Mbps 8 bit UART receiver, 80MHz clk, low level valid signal when idle
