@@ -7,7 +7,7 @@
 	8to1 mux control
 */
 
-module UART_8bytes
+module UART_TX_8bytes
 (
 	input reset,					// global reset and enable signal
 	input clk,						// actual needed baudrate (tested on 4,8 MHz)

@@ -7,5 +7,10 @@ Timing Analyser Checked:
   - globalReset		- is a module that makes a global enable signal on scheme start (0 is reset, 1 is work)
   - UARTRXn		- is a 5Mbps 8 bit UART receiver, 80MHz clk, high level valid signal when idle
   - UART_TX_8bytes	- is a 5Mbps 8 bit UART transmitter, no parity, 80MHz clk, multiplexed 8 bytes data in
+  - UART_TX_14bytes	- is a 5Mbps 8 bit UART transmitter, no parity, 80MHz clk, multiplexed 14 bytes data in
+
  VHDL modules:
   - UART_RX		- is a 5Mbps 8 bit UART receiver, 80MHz clk, low level valid signal when idle
+ 
+ SystemVerilog modules:
+  - memDblArray		- is a simple double array (32 arrays of 14 bytes of 8 bits)
