@@ -33,7 +33,7 @@ variable place	: integer range 0 to 8 := 0;						-- номер бита информации в пере
 variable data	: std_logic_vector (7 downto 0);					-- переменная с ответом
 variable strtcnt: integer range 0 to 8 := 0;						-- счётчик стартового бита
 variable stepcnt: integer range 0 to 16 := 0;						-- счётчик тактов между битами
-variable delay	: integer range 0 to 5 := 0;						-- задержечка для удлинения сигнала Valid
+variable delay	: integer range 0 to 10 := 0;						-- задержечка для удлинения сигнала Valid
 begin
 ----------------------------------------------
 ----- Приёмник УАРТ, конвертер ПСК в ПРК  ----
