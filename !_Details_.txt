@@ -1,3 +1,6 @@
+!! FOUND AN ISSUE FOR ADM4853 RECEIVERS !! a multiplexor on RX-Line needed. ((RX on 0, VCC on 1, DIR on Sel)).
+
+
 Timing Analyser Checked:
  Verilog modules:
   - clk80Mto640K	- is actually a divider by 125
@@ -8,6 +11,7 @@ Timing Analyser Checked:
   - UARTRXn		- is a 5Mbps 8 bit UART receiver, 80MHz clk, high level valid signal when idle
   - UART_TX_8bytes	- is a 5Mbps 8 bit UART transmitter, no parity, 80MHz clk, multiplexed 8 bytes data in
   - UART_TX_14bytes	- is a 5Mbps 8 bit UART transmitter, no parity, 80MHz clk, multiplexed 14 bytes data in
+  - UART_TX_15bytes	- is a 5Mbps 8 bit UART transmitter, no parity, 80MHz clk, multiplexed 15 bytes data in, TX_Done signal
 
  VHDL modules:
   - UART_RX		- is a 5Mbps 8 bit UART receiver, 80MHz clk, low level valid signal when idle

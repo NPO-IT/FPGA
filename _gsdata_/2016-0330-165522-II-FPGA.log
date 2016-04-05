@@ -1,0 +1,8 @@
+2016-03-30 16:55:22: -- Analysis Started by Analyze And Sync All
+2016-03-30 16:55:22: Изменений: 2, Конфликтов: 0, Копий Времени: 0, Копий Состояния: 0/0, Ошибок: 0, All: 22
+2016-03-30 16:55:22: Left to Right: Copy File: 2 
+2016-03-30 16:55:22: == Sync Started by Analyze And Sync All
+2016-03-30 16:55:22: Скопировано поверх 'D:/FTP/_FPGA_/!_Details_.txt' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Работка/_FPGA_/!_Details_.txt'
+2016-03-30 16:55:22: Скопировано поверх 'D:/FTP/_FPGA_/UART_RX.vhd' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Работка/_FPGA_/UART_RX.vhd'
+2016-03-30 16:55:22: ===== Синхронизация завершена. Время 00:00:00, Скорость: 0 байт/s файлов/сек =====, Синхронизировано: 2, Ошибок: 0
+2016-03-30 16:55:22: 

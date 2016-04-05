@@ -5,6 +5,8 @@
 --	8 бит UART, no parity, пор€док - LSB, стартовый 0, стоповый 1.
 --	модуль тактируетс€ от 80ћ√ц, битрейт передачи 5ћб/с
 --
+--	!! FOUND AN ISSUE !! on ADM4853 a multiplexor on RX-Line needed. ((RX on 0, VCC on 1, DIR on Sel)).
+--
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
