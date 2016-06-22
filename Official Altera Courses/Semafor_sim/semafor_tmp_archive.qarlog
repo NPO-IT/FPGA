@@ -1,0 +1,30 @@
+Quartus Prime Archive log --	D:/Altera/Courses/Semafor_sim/semafor_tmp_archive.qarlog
+
+Archive:	D:/Altera/Courses/Semafor_sim/semafor_tmp_archive.qar
+Date:		Mon Apr 11 13:34:54 2016
+Quartus Prime		15.1.0 Build 185 10/21/2015 SJ Standard Edition
+
+	=========== Files Selected: ===========
+D:/Altera/Courses/Semafor_sim/assignment_defaults.qdf
+D:/Altera/Courses/Semafor_sim/comm.v
+D:/Altera/Courses/Semafor_sim/dec.v
+D:/Altera/Courses/Semafor_sim/periodrom.bsf
+D:/Altera/Courses/Semafor_sim/periodrom.qip
+D:/Altera/Courses/Semafor_sim/periodrom.v
+D:/Altera/Courses/Semafor_sim/periodrom_bb.v
+D:/Altera/Courses/Semafor_sim/periods.hex
+D:/Altera/Courses/Semafor_sim/semafor.qpf
+D:/Altera/Courses/Semafor_sim/semafor.qsf
+D:/Altera/Courses/Semafor_sim/semafor.v
+D:/Altera/Courses/Semafor_sim/semafor_tb.v
+D:/Altera/Courses/Semafor_sim/simulation/modelsim/wave.do
+	======= Total: 13 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Mon Apr 11 13:34:58 2016
+Source archive file:	D:/Altera/Courses/Semafor_sim/semafor_tmp_archive.qar
+Archive was extracted into	D:/Altera/Courses/Semafor_sim_copy/
+		 - successfully.

@@ -1,0 +1,29 @@
+2016-04-11 20:03:06: -- Analysis Started by Analyze And Sync All
+2016-04-11 20:03:06: Изменений: 22, Конфликтов: 0, Копий Времени: 0, Копий Состояния: 0/0, Ошибок: 0, All: 46
+2016-04-11 20:03:06: Left to Right: Copy File: 22 
+2016-04-11 20:03:07: == Sync Started by Analyze And Sync All
+2016-04-11 20:03:07: Создана Папка 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses'
+2016-04-11 20:03:07: Создана Папка 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1'
+2016-04-11 20:03:07: Создана Папка 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Presentation'
+2016-04-11 20:03:07: Создана Папка 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Src'
+2016-04-11 20:03:07: Создана Папка 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog'
+2016-04-11 20:03:07: Создана Папка 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog/Standard'
+2016-04-11 20:03:07: Создана Папка 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog/Дополнительно'
+2016-04-11 20:03:07: Скопировано поверх 'D:/FTP/_FPGA_/!_Details_.txt' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/!_Details_.txt'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Presentation/Altera_Devices.pdf' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Presentation/Altera_Devices.pdf'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Presentation/Cyclone_14.pdf' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Presentation/Cyclone_14.pdf'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Presentation/MAXII_13.pdf' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Presentation/MAXII_13.pdf'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Presentation/Quartus_II_Design_Series_Foundation_15_0_v2_ru.pdf' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Presentation/Quartus_II_Design_Series_Foundation_15_0_v2_ru.pdf'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Src/comm.v' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Src/comm.v'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Src/dec.v' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Src/dec.v'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Src/semafor_tb.v' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Src/semafor_tb.v'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Verilog/bmstu_iu3_vlg_up_2015.pdf' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog/bmstu_iu3_vlg_up_2015.pdf'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Verilog/Standard/IEEE1364-2005.pdf' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog/Standard/IEEE1364-2005.pdf'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Verilog/Standard/IEEE1364.1-2002_IEEE_Standard_for_Verilog__Register_Transfer_Level_Synthesis.pdf' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog/Standard/IEEE1364.1-2002_IEEE_Standard_for_Verilog__Register_Transfer_Level_Synthesis.pdf'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Verilog/Standard/IEEE1800-2005.pdf' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog/Standard/IEEE1800-2005.pdf'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Verilog/Дополнительно/Емец, Verilog.djvu' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog/Дополнительно/Емец, Verilog.djvu'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/Official Altera Courses/Lab1/Verilog/Дополнительно/Поляков, VHDL и Verilog.djvu' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/Official Altera Courses/Lab1/Verilog/Дополнительно/Поляков, VHDL и Verilog.djvu'
+2016-04-11 20:03:07: Скопирован новый 'D:/FTP/_FPGA_/UART_TX_15bytes.v' -> 'C:/Users/IvanIgorevich/Desktop/OneDrive/Work/_FPGA_/UART_TX_15bytes.v'
+2016-04-11 20:03:07: Deleted Recycled: D:/FTP/_FPGA_/_gsdata_/_saved_/divReg.v
+2016-04-11 20:03:08: ===== Синхронизация завершена. Время 00:00:01, Скорость: 0 байт/s файлов/сек =====, Синхронизировано: 22, Ошибок: 0
+2016-04-11 20:03:08: 

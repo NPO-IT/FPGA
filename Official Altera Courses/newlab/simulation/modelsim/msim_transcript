@@ -1,0 +1,170 @@
+# do sinus_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Altera/Courses/newlab {D:/Altera/Courses/newlab/buttons.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:52:24 on Apr 27,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Altera/Courses/newlab" D:/Altera/Courses/newlab/buttons.v 
+# -- Compiling module buttons
+# 
+# Top level modules:
+# 	buttons
+# End time: 13:52:24 on Apr 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Altera/Courses/newlab {D:/Altera/Courses/newlab/accumulator.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:52:24 on Apr 27,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Altera/Courses/newlab" D:/Altera/Courses/newlab/accumulator.v 
+# -- Compiling module accumulator
+# 
+# Top level modules:
+# 	accumulator
+# End time: 13:52:24 on Apr 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Altera/Courses/newlab {D:/Altera/Courses/newlab/LUT.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:52:24 on Apr 27,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Altera/Courses/newlab" D:/Altera/Courses/newlab/LUT.v 
+# -- Compiling module LUT
+# 
+# Top level modules:
+# 	LUT
+# End time: 13:52:24 on Apr 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Altera/Courses/newlab {D:/Altera/Courses/newlab/sinus.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:52:24 on Apr 27,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Altera/Courses/newlab" D:/Altera/Courses/newlab/sinus.v 
+# -- Compiling module sinus
+# 
+# Top level modules:
+# 	sinus
+# End time: 13:52:24 on Apr 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Altera/Courses/newlab {D:/Altera/Courses/newlab/ds_DAC.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:52:24 on Apr 27,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Altera/Courses/newlab" D:/Altera/Courses/newlab/ds_DAC.v 
+# -- Compiling module ds_DAC
+# 
+# Top level modules:
+# 	ds_DAC
+# End time: 13:52:24 on Apr 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Altera/Courses/newlab {D:/Altera/Courses/newlab/pll.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:52:24 on Apr 27,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Altera/Courses/newlab" D:/Altera/Courses/newlab/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 13:52:24 on Apr 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Altera/Courses/newlab/db {D:/Altera/Courses/newlab/db/pll_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:52:25 on Apr 27,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Altera/Courses/newlab/db" D:/Altera/Courses/newlab/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 13:52:25 on Apr 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Altera/Courses/newlab {D:/Altera/Courses/newlab/sinus_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:52:25 on Apr 27,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Altera/Courses/newlab" D:/Altera/Courses/newlab/sinus_tb.v 
+# -- Compiling module sinus_tb
+# 
+# Top level modules:
+# 	sinus_tb
+# End time: 13:52:25 on Apr 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  sinus_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" sinus_tb 
+# Start time: 13:52:25 on Apr 27,2016
+# Loading work.sinus_tb
+# Loading work.sinus
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.buttons
+# Loading work.LUT
+# Loading altera_mf_ver.altsyncram
+# Loading work.accumulator
+# Loading work.ds_DAC
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# do D:/Altera/Courses/newlab/simulation/modelsim/wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /buttons_tb/clk
+# ** Error: (vish-4014) No objects found matching '/buttons_tb/clk'.
+# Executing ONERROR command at macro D:\Altera\Courses\newlab\simulation\modelsim\wave.do line 3
+# add wave -noupdate /buttons_tb/clr
+# ** Error: (vish-4014) No objects found matching '/buttons_tb/clr'.
+# Executing ONERROR command at macro D:\Altera\Courses\newlab\simulation\modelsim\wave.do line 4
+# add wave -noupdate /buttons_tb/btnUP
+# ** Error: (vish-4014) No objects found matching '/buttons_tb/btnUP'.
+# Executing ONERROR command at macro D:\Altera\Courses\newlab\simulation\modelsim\wave.do line 5
+# add wave -noupdate /buttons_tb/btnDN
+# ** Error: (vish-4014) No objects found matching '/buttons_tb/btnDN'.
+# Executing ONERROR command at macro D:\Altera\Courses\newlab\simulation\modelsim\wave.do line 6
+# add wave -noupdate /buttons_tb/result
+# ** Error: (vish-4014) No objects found matching '/buttons_tb/result'.
+# Executing ONERROR command at macro D:\Altera\Courses\newlab\simulation\modelsim\wave.do line 7
+# add wave -noupdate /buttons_tb/buttons_tb/clkDetect
+# ** Error: (vish-4014) No objects found matching '/buttons_tb/buttons_tb/clkDetect'.
+# Executing ONERROR command at macro D:\Altera\Courses\newlab\simulation\modelsim\wave.do line 8
+# add wave -noupdate /buttons_tb/buttons_tb/cntClk
+# ** Error: (vish-4014) No objects found matching '/buttons_tb/buttons_tb/cntClk'.
+# Executing ONERROR command at macro D:\Altera\Courses\newlab\simulation\modelsim\wave.do line 9
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+# quietly wave cursor active 0
+# configure wave -namecolwidth 150
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {145817739050 ps} {145817740050 ps}
+# run -all
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 90000  Instance: sinus_tb.sinus_tb.oscdiv.altpll_component.cycloneiii_pll.pll3
+# Break key hit
+# Break in Module MF_cycloneiii_pll at /build/swbuild/SJ/nightly/15.1/185/l64/work/modelsim/eda/sim_lib/altera_mf.v line 16863
+# Error opening D:/build/swbuild/SJ/nightly/15.1/185/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# Path name 'D:/build/swbuild/SJ/nightly/15.1/185/l64/work/modelsim/eda/sim_lib/altera_mf.v' doesn't exist.
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 13:56:54 on Apr 27,2016, Elapsed time: 0:04:29
+# Errors: 22, Warnings: 0

@@ -1,0 +1,35 @@
+|test
+dout[0] <= inst[0].DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= inst[1].DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= inst[2].DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= inst[3].DB_MAX_OUTPUT_PORT_TYPE
+dout[4] <= inst[4].DB_MAX_OUTPUT_PORT_TYPE
+dout[5] <= inst[5].DB_MAX_OUTPUT_PORT_TYPE
+dout[6] <= inst[6].DB_MAX_OUTPUT_PORT_TYPE
+dout[7] <= inst[7].DB_MAX_OUTPUT_PORT_TYPE
+clk => inst[7].CLK
+clk => inst[6].CLK
+clk => inst[5].CLK
+clk => inst[4].CLK
+clk => inst[3].CLK
+clk => inst[2].CLK
+clk => inst[1].CLK
+clk => inst[0].CLK
+inv => inst1[7].IN0
+inv => inst1[6].IN0
+inv => inst1[5].IN0
+inv => inst1[4].IN0
+inv => inst1[3].IN0
+inv => inst1[2].IN0
+inv => inst1[1].IN0
+inv => inst1[0].IN0
+din[0] => inst1[0].IN1
+din[1] => inst1[1].IN1
+din[2] => inst1[2].IN1
+din[3] => inst1[3].IN1
+din[4] => inst1[4].IN1
+din[5] => inst1[5].IN1
+din[6] => inst1[6].IN1
+din[7] => inst1[7].IN1
+
+

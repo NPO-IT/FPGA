@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "fouta",
+					"strict" : false
+				},
+				{
+					"name" : "foutd",
+					"strict" : false
+				},
+				{
+					"name" : "phase_dn",
+					"strict" : false
+				},
+				{
+					"name" : "phase_up",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Altera/Courses/Semafor_sim/simulation/modelsim
+vcomm
+Z1 !s110 1459932797
+!i10b 1
+!s100 Yc2G4IgVFod=l>QJhFf;Z0
+IzWID95:h^c<kzeWe?hDEk2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1411318294
+8D:/Altera/Courses/Semafor_sim/comm.v
+FD:/Altera/Courses/Semafor_sim/comm.v
+L0 1
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1459932797.000000
+!s107 D:/Altera/Courses/Semafor_sim/comm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/Semafor_sim|D:/Altera/Courses/Semafor_sim/comm.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Altera/Courses/Semafor_sim
+vdec
+R1
+!i10b 1
+!s100 cPa2<jXPzdIZb^clF9YZP3
+I@4g7UGODlmToa6ZF3diVb1
+R2
+R0
+w1411318328
+8D:/Altera/Courses/Semafor_sim/dec.v
+FD:/Altera/Courses/Semafor_sim/dec.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Altera/Courses/Semafor_sim/dec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/Semafor_sim|D:/Altera/Courses/Semafor_sim/dec.v|
+!i113 1
+R5
+R6
+vperiodrom
+Z7 !s110 1459932798
+!i10b 1
+!s100 ?g]Q:l2jQIfRCS:MRZ_Wh1
+I:WiR1gz10Jgng:@><ajID0
+R2
+R0
+w1459930136
+8D:/Altera/Courses/Semafor_sim/periodrom.v
+FD:/Altera/Courses/Semafor_sim/periodrom.v
+L0 40
+R3
+r1
+!s85 0
+31
+Z8 !s108 1459932798.000000
+!s107 D:/Altera/Courses/Semafor_sim/periodrom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/Semafor_sim|D:/Altera/Courses/Semafor_sim/periodrom.v|
+!i113 1
+R5
+R6
+vsemafor
+R1
+!i10b 1
+!s100 8Oe2BS:oS6EJCnRfa<3:Y2
+Iah3XgA^AO>G:<9?XFE?Ef3
+R2
+R0
+w1459931313
+8D:/Altera/Courses/Semafor_sim/semafor.v
+FD:/Altera/Courses/Semafor_sim/semafor.v
+L0 20
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Altera/Courses/Semafor_sim/semafor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/Semafor_sim|D:/Altera/Courses/Semafor_sim/semafor.v|
+!i113 1
+R5
+R6
+vsemafor_tb
+R7
+!i10b 1
+!s100 K^YPJT@98aLW@9_R??[P62
+I7U;0HD]CgIcSj3=Th>?X:0
+R2
+R0
+w1369646402
+8D:/Altera/Courses/Semafor_sim/semafor_tb.v
+FD:/Altera/Courses/Semafor_sim/semafor_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/Altera/Courses/Semafor_sim/semafor_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/Semafor_sim|D:/Altera/Courses/Semafor_sim/semafor_tb.v|
+!i113 1
+R5
+R6

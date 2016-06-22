@@ -1,0 +1,180 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Altera/Courses/newlab/simulation/modelsim
+vaccumulator
+Z1 !s110 1461754344
+!i10b 1
+!s100 H=nE2>L3TSfTBz`S_OTD91
+IYNhU75MmVdGnA=iLJeI4e3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1461575049
+8D:/Altera/Courses/newlab/accumulator.v
+FD:/Altera/Courses/newlab/accumulator.v
+L0 1
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1461754344.000000
+!s107 D:/Altera/Courses/newlab/accumulator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/newlab|D:/Altera/Courses/newlab/accumulator.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Altera/Courses/newlab
+vbuttons
+R1
+!i10b 1
+!s100 DI6X[HTYbA8HnAA7]:51L0
+Ie@m7RJ?ELR2M45[o5[R^N2
+R2
+R0
+w1461746233
+8D:/Altera/Courses/newlab/buttons.v
+FD:/Altera/Courses/newlab/buttons.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Altera/Courses/newlab/buttons.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/newlab|D:/Altera/Courses/newlab/buttons.v|
+!i113 1
+R5
+R6
+vds_DAC
+R1
+!i10b 1
+!s100 l5l<;Hkkf9bJeXfhEF?Rc0
+Il7D198G3KN=]h1>@?4<X30
+R2
+R0
+w1461582701
+8D:/Altera/Courses/newlab/ds_DAC.v
+FD:/Altera/Courses/newlab/ds_DAC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Altera/Courses/newlab/ds_DAC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/newlab|D:/Altera/Courses/newlab/ds_DAC.v|
+!i113 1
+R5
+R6
+nds_@d@a@c
+vLUT
+R1
+!i10b 1
+!s100 gi38X1[48LXm2_Un3AAGT3
+Iig>4noecbC30kKJY?O:TO1
+R2
+R0
+w1461573167
+8D:/Altera/Courses/newlab/LUT.v
+FD:/Altera/Courses/newlab/LUT.v
+Z7 L0 40
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Altera/Courses/newlab/LUT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/newlab|D:/Altera/Courses/newlab/LUT.v|
+!i113 1
+R5
+R6
+n@l@u@t
+vpll
+R1
+!i10b 1
+!s100 GgZE=HSmf5GZbFdM<llIK2
+I;]WjM:37YXKIN>;DXTMi@1
+R2
+R0
+w1461747585
+8D:/Altera/Courses/newlab/pll.v
+FD:/Altera/Courses/newlab/pll.v
+R7
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Altera/Courses/newlab/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/newlab|D:/Altera/Courses/newlab/pll.v|
+!i113 1
+R5
+R6
+vpll_altpll
+Z8 !s110 1461754345
+!i10b 1
+!s100 4Om<hZO1>7fo^keTO9>W73
+Im;6@ClCg[nnB`GEjAD?f72
+R2
+R0
+w1461748458
+8D:/Altera/Courses/newlab/db/pll_altpll.v
+FD:/Altera/Courses/newlab/db/pll_altpll.v
+L0 30
+R3
+r1
+!s85 0
+31
+Z9 !s108 1461754345.000000
+!s107 D:/Altera/Courses/newlab/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/newlab/db|D:/Altera/Courses/newlab/db/pll_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/Altera/Courses/newlab/db
+vsinus
+R1
+!i10b 1
+!s100 c?VHYc;J`a8K2V06B[NPJ2
+IoVM=GJ0m;Ma:UCfzA=<VY0
+R2
+R0
+w1461754021
+8D:/Altera/Courses/newlab/sinus.v
+FD:/Altera/Courses/newlab/sinus.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Altera/Courses/newlab/sinus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/newlab|D:/Altera/Courses/newlab/sinus.v|
+!i113 1
+R5
+R6
+vsinus_tb
+R8
+!i10b 1
+!s100 XSKb@9hH^6_E0:U`W6?;F3
+IEzzQ19h=BD0[kV2]h_Vjo2
+R2
+R0
+w1461754277
+8D:/Altera/Courses/newlab/sinus_tb.v
+FD:/Altera/Courses/newlab/sinus_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Altera/Courses/newlab/sinus_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Altera/Courses/newlab|D:/Altera/Courses/newlab/sinus_tb.v|
+!i113 1
+R5
+R6

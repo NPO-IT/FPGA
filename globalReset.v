@@ -8,7 +8,7 @@ module globalReset			// to use this: set the initial for (~reset) and main circu
 	input clk40,			// 40 MHz
 	output reg rst			// global enable
 );
-reg [5:0] count;
+reg [5:0] count = 0;
 
 always@(posedge clk40)
 begin

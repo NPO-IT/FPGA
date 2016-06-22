@@ -1,0 +1,35 @@
+`timescale 1 ns/1 ns
+
+module accumulator_tb();
+
+	// Wires and variables to connect to UUT (unit under test)
+	reg clk, clr;
+	reg [7:0] increment;
+	wire [7:0] result;
+	
+	// Instantiate UUT
+	accumulator accumulat_tb(.clk(clk), .clr(clrn), .increment(phinc),
+		.result(phase));
+
+	// Clock definition
+	initial begin
+		clk = 0;
+		forever #10 clk = ~clk;
+	end
+	
+	// Strobe and divisor definition
+	initial begin
+		phinc = 2;
+		clrn = 0;
+		repeat (2)
+		begin
+			repeat(20)@(posedge clk)
+			@(negedge clk)	clrn=0;
+			repeat(20)@(negedge clk)
+			@(negedge clk)	clrn=1;
+			repeat(640)@(posedge clk)
+		end
+		$stop;
+	end
+	
+endmodule

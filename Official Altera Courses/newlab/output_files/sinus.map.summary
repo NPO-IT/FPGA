@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 27 13:58:02 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : sinus
+Top-level Entity Name : sinus
+Family : Cyclone IV E
+Total logic elements : 100
+    Total combinational functions : 94
+    Dedicated logic registers : 66
+Total registers : 66
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

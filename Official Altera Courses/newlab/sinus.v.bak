@@ -1,0 +1,26 @@
+module sinus(clk, clr, phinc, DAC_out);
+
+	// Input Port(s)
+	input clk, clr;
+	input [7:0] phinc;
+
+	output [7:0]midout;
+	output DAC_out;
+
+	// Additional Module Item(s)
+
+	wire [7:0]middle;
+	
+LUT	ROM1PORT(
+	.clock(clk),
+	.address(middle),
+	.q(midout));
+
+accumulator phaseacc(
+	.clk(clk),
+	.clrn(clr),
+	.phinc(phinc),
+	.phase(middle)
+	);
+
+endmodule

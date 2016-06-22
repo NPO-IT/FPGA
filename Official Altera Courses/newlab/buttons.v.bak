@@ -1,0 +1,52 @@
+module buttons 
+#(
+	parameter DEFAULT = 8'd1
+)
+
+(
+	input reset,
+	input clk,
+	input phase_up,
+	input phase_dn,
+	output reg [7:0]phinc
+);
+
+reg [15:0]cntClk;		
+reg clkDetect;				// 250Hz clk
+wire btn_up; 
+wire btn_dn; 
+reg[2:0]btn_up_sync; 
+reg[2:0]btn_dn_sync; 
+
+
+assign btn_up = !((!btn_up_sync[2]) & btn_up_sync[1]); 	// detect the front
+assign btn_dn = !((!btn_dn_sync[2]) & btn_dn_sync[1]); 
+
+always@(negedge reset or posedge clk) begin		// generate clock
+	if (~reset) begin
+		cntClk <= 0;
+	end else begin
+		if (cntClk == 15'd10000) begin
+			cntClk <= 0; 
+			clkDetect <= ~clkDetect;
+		end else cntClk <= cntClk + 1'b1;
+	end
+end
+
+always@(posedge clkDetect) begin						// double dff
+	btn_up_sync <= {btn_up_sync[1:0], phase_up}; 
+	btn_dn_sync <= {btn_dn_sync[1:0], phase_dn}; 
+end
+
+
+always@(negedge reset or posedge clkDetect) begin		// inc or dec the phase
+	if (~reset)begin
+		phinc <= DEFAULT;
+	end else begin
+		if (btn_dn) begin phinc <= phinc + 1'b1; end
+		else if (btn_up) begin phinc <= phinc - 1'b1; end
+	end
+end
+
+
+endmodule

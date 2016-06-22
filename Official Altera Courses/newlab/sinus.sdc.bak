@@ -1,0 +1,7 @@
+set_time_format -unit ns
+derive_clock_uncertainty
+create_clock -period 50MHz -name {inclk} [get_ports {clk}]
+derive_pll_clocks
+set_false_path -from [get_ports {phase*}] -to [get_clocks {mypll_inst|altpll_component|auto_generated|pll1|clk[0]}] 
+set_output_delay -clock [get_clocks {inclk}] -max 10.0 [get_ports {fout*}]
+set_output_delay -clock [get_clocks {inclk}] -min -2.0 [get_ports {fout*}]

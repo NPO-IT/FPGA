@@ -1,0 +1,29 @@
+`timescale 1 ns/1 ns
+
+module sinus_tb();
+
+	// Wires and variables to connect to UUT (unit under test)
+	reg clk, clr;
+	reg [7:0] phinc;
+	wire [7:0] result;
+	
+	// Instantiate UUT
+	sinus sinus_tb(.clk(clk), .clr(clr), .phinc(phinc),
+		.result(result));
+
+	// Clock definition
+	initial begin
+		clk = 0;
+		forever #10 clk = ~clk;
+	end
+	
+	// Strobe and divisor definition
+	initial begin
+		phinc = 1;
+		clr = 0;
+		#5 clr = 1;
+		repeat (32768) @(posedge clk);
+		$stop;
+	end
+	
+endmodule

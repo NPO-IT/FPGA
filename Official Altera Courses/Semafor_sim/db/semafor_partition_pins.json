@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "red",
+					"strict" : false
+				},
+				{
+					"name" : "yellow",
+					"strict" : false
+				},
+				{
+					"name" : "green",
+					"strict" : false
+				},
+				{
+					"name" : "line",
+					"strict" : false
+				},
+				{
+					"name" : "strobe",
+					"strict" : false
+				},
+				{
+					"name" : "divider[0]",
+					"strict" : false
+				},
+				{
+					"name" : "divider[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+module DAC
+
+#(
+	// Parameter Declarations
+//	parameter <param_name> = <default_value>,
+)
+
+(
+	// Input Ports
+	input clk, clrn,
+	input signed [7:0]value,
+
+	// Output Ports
+	output DAC_out
+);
+
+	// Module Item(s)
+	
+	wire [8:0]U;
+	wire [7:0]Ep;
+	reg [8:0]latched;
+	
+	assign DAC_out = ~U[8];
+	
+	always @ (negedge clrn or posedge clk)
+	begin
+		// Reset whenever the reset signal goes low, regardless of the clock
+		if (!clrn)
+		begin
+			latched <= 0;
+		end
+		// If not resetting, update the register output on the clock's rising edge
+		else
+		begin
+			latched <= value - Ep;
+		end
+	end
+	
+	always@(*)
+	begin
+		U = latched;
+	end
+
+
+endmodule

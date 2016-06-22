@@ -1,0 +1,7 @@
+{
+	"common_dir" : "D:/Altera/Courses/Semafor_sim_copy/",
+	"acds_version" : "Version 15.1.0",
+	"platform" : "windows",
+	"os" : "Windows 7",
+	"qpf" : "semafor.qpf"
+}
